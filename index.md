@@ -1,4 +1,4 @@
-# Automatic Plant Waterer
+# Rock Paper Scissors
 Replace this text with a brief description (2-3 sentences) of your project. This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. As you complete your portfolio, remember your audience is less familiar than you are with all that your project entails!
 
 You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions:
@@ -91,4 +91,7 @@ One of the best parts about Github is that you can view how other people set up 
 To watch the BSE tutorial on how to create a portfolio, click here.
 
 # Starter Project
+First ever project, where I learned how to solder and how lightbulbs work. The sliders choose intensity of the 3 different lightbulbs in the LED and change its color. I put the LED the wrong way and this caused the green slider to not work. After a couple minutes of trying, no one could remove it. Although the green slider doesn't work, the colors still change when I move the sliders
 ![Headstone Image](IMG_5720.jpeg)
+
+

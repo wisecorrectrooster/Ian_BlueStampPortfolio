@@ -45,12 +45,12 @@ For your second milestone, explain what you've worked on since your previous mil
 
 **Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CaCazFBhYKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SNgfvdcwz_M?si=wfufoF-CKIxGiGew" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 
 
-  My project is a rock paper scissors machine where it ranodmly chooses one of the servos to spin. It will then have a popsicle stick attached to it witha rock, paper, or scissor drawn on it. I chose this project as it was interesting looking and around my level. So far, I learned how to code Arduino in which I made it spin one of the three servos randomly. It works when something is 20 centimeteres or less and the servos spin with a popsicle stick attached to it. For some reason, the code doesn't run unless it is connected to the computer thorough a USB cable. The next step for me is to have the code automattically rune4e4rtgg on without it having to be wired to my computer.
+  My project is a rock paper scissors machine where it randomly chooses one of the servos to spin. It will then have a popsicle stick attached to it witha rock, paper, or scissor drawn on it. I chose this project as it was interesting looking and around my level. So far, I learned how to code Arduino in which I made it spin one of the three servos randomly. It works when something is 20 centimeteres or less and the servos spin with a popsicle stick attached to it. For some reason, the code doesn't run unless it is connected to the computer thorough a USB cable. The next step for me is to have the code automattically rune4e4rtgg on without it having to be wired to my computer.
 
 # Schematics 
 Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 

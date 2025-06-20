@@ -8,10 +8,7 @@ You should comment out all portions of your portfolio that you have not complete
 |:--:|:--:|:--:|:--:|
 | Ian C. | Northgate High School |STEM| 9th grader
 
-
 <img src="IanC.jpg" width="50%" height="50%">
-
-![Headstone Image](logo.svg)
   
 # Final Milestone <!--- DIDNT DO -->
 

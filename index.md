@@ -48,19 +48,109 @@ Here's where you'll put images of your schematics. [Tinkercad](https://www.tinke
 
 
 # Code
-Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
 
 ```c++
+#include <Servo.h>
+
+
+// HC-SR04 sensor pins
+#define TRIG_PIN 12
+#define ECHO_PIN 11
+
+
+// Servo objects
+Servo servo_3;
+Servo servo_6;
+Servo servo_9;
+
+
 void setup() {
-  // put your setup code here, to run once:
-  Serial.begin(9600);
-  Serial.println("Hello World!");
+ Serial.begin(9600);
+
+
+ // Sensor pins
+ pinMode(TRIG_PIN, OUTPUT);
+ pinMode(ECHO_PIN, INPUT);
+
+
+ // Attach servos
+ servo_3.attach(3);
+ servo_6.attach(6);
+ servo_9.attach(9);
+
+
+ // Set to neutral
+ servo_3.write(90);
+ servo_6.write(90);
+ servo_9.write(90);
+
+
+ randomSeed(analogRead(0)); // Seed random
 }
+
 
 void loop() {
-  // put your main code here, to run repeatedly:
+ float distance = readDistance();
 
+
+ Serial.print("Distance: ");
+ Serial.print(distance);
+ Serial.println(" cm");
+
+
+ // Only trigger servo if distance is valid and <= 20
+ if (distance > 0 && distance <= 20) {
+   int randomServo = random(1, 4); // 1 to 3
+
+
+   switch (randomServo) {
+     case 1:
+       servo_3.write(179);
+       delay(1000);
+       servo_3.write(90);
+       break;
+
+
+     case 2:
+       servo_6.write(179);
+       delay(1000);
+       servo_6.write(90);
+       break;
+
+
+     case 3:
+       servo_9.write(179);
+       delay(1000);
+       servo_9.write(90);
+       break;
+   }
+
+
+   delay(500); // Short pause after action
+ }
+
+
+ delay(200); // General delay between checks
 }
+
+
+// Reads distance in cm
+float readDistance() {
+ digitalWrite(TRIG_PIN, LOW);
+ delayMicroseconds(2);
+ digitalWrite(TRIG_PIN, HIGH);
+ delayMicroseconds(10);
+ digitalWrite(TRIG_PIN, LOW);
+
+
+ long duration = pulseIn(ECHO_PIN, HIGH, 30000); // 30ms timeout
+ if (duration == 0) return -1; // No echo
+
+
+ float distance = duration * 0.0343 / 2;
+ return distance;
+}
+
 ```
 
 # Bill of Materials

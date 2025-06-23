@@ -41,8 +41,9 @@ For your final milestone, explain the outcome of your project. Key details to in
 
 
 # Schematics 
-Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
+Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resources to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
 
+<img src="arduinoschematic.jpg" width="50%" height="50%">
 
 # Code
 
@@ -98,170 +99,63 @@ Only works if connected to computer, for some reason the code couldn't be downlo
 
 ```c++
 
-
 #include <Servo.h>
-
-
 volatile long A;
-
-
 float checkdistance_12_11() {
-
-
 digitalWrite(11, LOW);
-
-
 delayMicroseconds(2);
-
-
 digitalWrite(11, HIGH);
-
-
 delayMicroseconds(10);
-
-
 digitalWrite(11, LOW);
-
-
 float distance = pulseIn(10, HIGH) / 58.00;
-
-
 delay(10);
-
-
 return distance;
-
-
 }
-
 
 Servo servo_3;
-
-
 Servo servo_6;
-
-
 Servo servo_9;
-
-
 void setup()
-
-
 {
-
-
 A = 0;
-
-
 pinMode(11, OUTPUT);
-
-
 pinMode(10, INPUT);
-
-
 pinMode(12, OUTPUT);
-
-
 servo_3.attach(3);
-
-
 servo_6.attach(6);
-
-
 servo_9.attach(9);
-
-
 }
-
 
 void loop()
-
-
 {
-
-
 if (checkdistance_12_11() < 20) {
-
-
 A = random(0, 4);
-
-
 switch (A) {
-
-
 case 1:
-
-
-
-
 delay(100);
-
-
 servo_3.write(179);
-
-
 delay(1000);
-
-
 servo_3.write(90);
-
-
 delay(500);
-
-
 break;
-
 
 case 2:
-
-
-
-
 delay(100);
-
-
 servo_6.write(179);
-
-
 delay(1000);
-
-
 servo_6.write(90);
-
-
 delay(500);
-
-
 break;
-
 
 case 3:
-
-
 delay(100);
-
-
 servo_9.write(179);
-
-
 delay(1000);
-
-
 servo_9.write(90);
-
-
 delay(500);
-
-
 break;
-
-
 }
-
-
 }
-
-
 }
 
 ```

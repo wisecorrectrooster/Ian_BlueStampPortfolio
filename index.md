@@ -53,6 +53,226 @@ Here's where you'll put images of your schematics. [Tinkercad](https://www.tinke
 
 # Code
 
+
+tells how far something is with a with a number every seconed
+```c++
+#define TRIG_PIN 12
+#define ECHO_PIN 11
+
+
+void setup() {
+ Serial.begin(9600);               // Start the serial communication
+ pinMode(TRIG_PIN, OUTPUT);        // Set trig pin as output
+ pinMode(ECHO_PIN, INPUT);         // Set echo pin as input
+}
+
+
+void loop() {
+ long duration;
+ float distance_cm;
+
+
+ // Clear the trigPin
+ digitalWrite(TRIG_PIN, LOW);
+ delayMicroseconds(2);
+
+
+ // Send a 10 microsecond pulse to trigger
+ digitalWrite(TRIG_PIN, HIGH);
+ delayMicroseconds(10);
+ digitalWrite(TRIG_PIN, LOW);
+
+
+ // Read the time it takes for the echo to return
+ duration = pulseIn(ECHO_PIN, HIGH);
+
+
+ // Calculate distance in cm
+ distance_cm = duration * 0.0343 / 2;
+
+
+ // Print the distance to Serial Monitor
+ Serial.print("Distance: ");
+ Serial.print(distance_cm);
+ Serial.println(" cm");
+
+
+ delay(1000);  // Short delay to reduce noise in readings
+}
+```
+First code having to be connected to computer but didn't work if not connected to my computer
+
+```c++
+
+
+#include <Servo.h>
+
+
+volatile long A;
+
+
+float checkdistance_12_11() {
+
+
+digitalWrite(11, LOW);
+
+
+delayMicroseconds(2);
+
+
+digitalWrite(11, HIGH);
+
+
+delayMicroseconds(10);
+
+
+digitalWrite(11, LOW);
+
+
+float distance = pulseIn(10, HIGH) / 58.00;
+
+
+delay(10);
+
+
+return distance;
+
+
+}
+
+
+Servo servo_3;
+
+
+Servo servo_6;
+
+
+Servo servo_9;
+
+
+void setup()
+
+
+{
+
+
+A = 0;
+
+
+pinMode(11, OUTPUT);
+
+
+pinMode(10, INPUT);
+
+
+pinMode(12, OUTPUT);
+
+
+servo_3.attach(3);
+
+
+servo_6.attach(6);
+
+
+servo_9.attach(9);
+
+
+}
+
+
+void loop()
+
+
+{
+
+
+if (checkdistance_12_11() < 20) {
+
+
+A = random(0, 4);
+
+
+switch (A) {
+
+
+case 1:
+
+
+
+
+delay(100);
+
+
+servo_3.write(179);
+
+
+delay(1000);
+
+
+servo_3.write(90);
+
+
+delay(500);
+
+
+break;
+
+
+case 2:
+
+
+
+
+delay(100);
+
+
+servo_6.write(179);
+
+
+delay(1000);
+
+
+servo_6.write(90);
+
+
+delay(500);
+
+
+break;
+
+
+case 3:
+
+
+delay(100);
+
+
+servo_9.write(179);
+
+
+delay(1000);
+
+
+servo_9.write(90);
+
+
+delay(500);
+
+
+break;
+
+
+}
+
+
+}
+
+
+}
+
+```
+
+Code being used currently
 ```c++
 #include <Servo.h>
 

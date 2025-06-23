@@ -110,13 +110,14 @@ digitalWrite(11, LOW);
 float distance = pulseIn(10, HIGH) / 58.00;
 delay(10);
 return distance;
-}
 
+}
 Servo servo_3;
 Servo servo_6;
 Servo servo_9;
 void setup()
 {
+
 A = 0;
 pinMode(11, OUTPUT);
 pinMode(10, INPUT);
@@ -124,10 +125,11 @@ pinMode(12, OUTPUT);
 servo_3.attach(3);
 servo_6.attach(6);
 servo_9.attach(9);
-}
 
+}
 void loop()
 {
+
 if (checkdistance_12_11() < 20) {
 A = random(0, 4);
 switch (A) {

@@ -2,8 +2,6 @@
 The rock, paper, and scissors game randomly chooses one of the sticks which will be used to play against you. It senses if your hand is twenty centimeters or closer and cooses a stick. It uses 3 servos and a ultrasonic sensor, as well as a arduino board with wires and breadboards.
 
 
-You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions:
-
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
 | Ian C. | Northgate High School |STEM| 9th grader

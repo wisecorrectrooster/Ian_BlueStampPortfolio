@@ -1,14 +1,12 @@
 # Rock Paper Scissors
 The rock, paper, and scissors game randomly chooses one of the sticks which will be used to play against you. It senses if your hand is twenty centimeters or closer and cooses a stick. It uses 3 servos and a ultrasonic sensor, as well as a arduino board with wires and breadboards.
 
-
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
 | Ian C. | Northgate High School |STEM| 9th grader
 
 <img src="IanC.jpg" width="50%" height="50%">
   
-
 # Final Milestone
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XZ90QMi0aBw?si=F6m3viqu-RIetxs1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -72,7 +70,6 @@ void loop() {
 # Second Milestone
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NtIcOKggFbA?si=OMmbDALPtIFQoETY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 
   On my first milestone, the code worked but it couldn't run without it constantly having to be connected to my computer. However, I have made it so that it can run on its own with the battery and is put in a box with servos. The servos have popsicle sticks attached to them with paper with rock, paper, and scissors drawn on them. Along the way, I accidently connected the servos wrong and this caused me to brainstorm and I thought of the idea of adding a fan and wheels. On my third and final milestone, I will be finishing my modifications and having the whole project completed.
 

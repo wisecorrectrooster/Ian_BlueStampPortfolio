@@ -9,9 +9,7 @@ The rock, paper, and scissors game randomly chooses one of the sticks which will
 <img src="IanC.jpg" width="50%" height="50%">
   
 
-# Final Milestone <!--- DIDNT DO -->
-
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
+# Final Milestone
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XZ90QMi0aBw?si=F6m3viqu-RIetxs1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 

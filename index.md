@@ -15,13 +15,7 @@ The rock, paper, and scissors game randomly chooses one of the sticks which will
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XZ90QMi0aBw?si=F6m3viqu-RIetxs1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-For your final milestone, explain the outcome of your project. Key details to include are:
-- What you've accomplished since your previous milestone
-- What your biggest challenges and triumphs were at BSE
-- A summary of key topics you learned about
-- What you hope to learn in the future after everything you've learned at BSE
-
-  I have added wheels to my box and made a rubber band to launcher to attach to my box later as a prank when people put thier hand in front of the ultrasonic sensor. Along the way, the rubber band launcher's wiring was kind of hard and confusing.
+  I have added wheels to my box and made a rubber band to launcher to attach to my box later as a prank when people put thier hand in front of the ultrasonic sensor. Along the way, the rubber band launcher's wiring was kind of hard and confusing. Throughout this project, I have learned how to code on arduino and to wire servos and ultrasonic sensors to the board. I hope to learn more about coding and maybe increase my skills in wiring.
   
 
 

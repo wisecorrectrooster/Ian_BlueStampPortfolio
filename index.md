@@ -14,8 +14,59 @@ The rock, paper, and scissors game randomly chooses one of the sticks which will
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XZ90QMi0aBw?si=F6m3viqu-RIetxs1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
   I have added wheels to my box and made a rubber band to launcher to attach to my box later as a prank when people put thier hand in front of the ultrasonic sensor. Along the way, the rubber band launcher's wiring was kind of hard and confusing. Throughout this project, I have learned how to code on arduino and to wire servos and ultrasonic sensors to the board. I hope to learn more about coding and maybe increase my skills in wiring.
-  
 
+  ```c++
+#include <Servo.h>
+
+#define trigPin 12
+#define echoPin 13
+
+Servo servo;
+bool triggered = false;  // Only run the servo once
+
+void setup() {
+  Serial.begin(9600);
+
+  pinMode(trigPin, OUTPUT);
+  pinMode(echoPin, INPUT);
+
+  servo.attach(3);
+  servo.write(0);  // Start at 0°
+}
+
+void loop() {
+  if (triggered) return;  // Do nothing after first activation
+
+  long duration, distance;
+
+  // Send trigger pulse
+  digitalWrite(trigPin, LOW);
+  delayMicroseconds(2);
+  digitalWrite(trigPin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigPin, LOW);
+
+  // Read echo pulse
+  duration = pulseIn(echoPin, HIGH);
+  distance = (duration / 2) / 29.1;
+
+  if (distance > 0 && distance < 20) {
+    Serial.print("Object detected at: ");
+    Serial.print(distance);
+    Serial.println(" cm");
+
+    servo.write(180);  // Move to 180°
+    delay(1000);       // Wait 1 second
+
+    servo.write(0);    // Move back to 0°
+    delay(1000);       // Wait again
+
+    triggered = true;  // Stop running the loop
+  }
+
+  delay(200);  // Small delay between checks
+}
+```
 
 # Second Milestone
 
@@ -107,7 +158,6 @@ float readDistance() {
  float distance = duration * 0.0343 / 2;
  return distance;
 }
-
 ```
 
 # First Milestone
@@ -179,7 +229,6 @@ break;
 }
 }
 }
-
 ```
 
 # Schematics 

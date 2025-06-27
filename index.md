@@ -15,6 +15,7 @@ The rock, paper, and scissors game randomly chooses one of the sticks which will
 
   I have added wheels to my box and made a rubber band to launcher to attach to my box later as a prank when people put thier hand in front of the ultrasonic sensor. Along the way, the rubber band launcher's wiring was kind of hard and confusing. Throughout this project, I have learned how to code on arduino and to wire servos and ultrasonic sensors to the board. I hope to learn more about coding and maybe increase my skills in wiring.
 
+code for rubber band launcher
   ```c++
 #include <Servo.h>
 

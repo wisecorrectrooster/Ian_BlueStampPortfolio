@@ -1,7 +1,7 @@
 # Rock Paper Scissors
-The rock, paper, and scissors game randomly chooses one of the sticks which will be used to play against you. It senses if your hand is twenty centimeters or closer and cooses a stick. It uses 3 servos and a ultrasonic sensor, as well as a arduino board with wires and breadboards.
+The rock, paper, and scissors game randomly chooses one of the sticks which will be used to play against you. It senses if your hand is twenty centimeters or closer and chooses a stick. It uses 3 servos and a ultrasonic sensor, as well as a arduino board with wires and breadboards.
 
-| **Engineer** | **School** | **Area of Interest** | **Grade** |
+| **Name** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
 | Ian C. | Northgate High School |STEM| 9th grader
 
@@ -11,14 +11,14 @@ The rock, paper, and scissors game randomly chooses one of the sticks which will
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XZ90QMi0aBw?si=F6m3viqu-RIetxs1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-  I have added wheels to my box and made a rubber band to launcher to attach to my box later as a prank when people put thier hand in front of the ultrasonic sensor. Along the way, the rubber band launcher's wiring was kind of hard and confusing. Throughout this project, I have learned how to code on arduino and to wire servos and ultrasonic sensors to the board. I hope to learn more about coding and maybe increase my skills in wiring.
+  I have added wheels to my box and made a rubber band to launcher to attach to my box later as a prank when people put thier hand in front of the ultrasonic sensor. Along the way, the rubber band launcher's wiring was kind of hard and confusing as I had to wire it myself without a diagram. Throughout this project, I have learned how to code on arduino and to wire servos and ultrasonic sensors to the board. I hope to learn more about coding and maybe increase my skills in wiring.
 
-code for rubber band launcher
+## code for rubber band launcher
   ```c++
 #include <Servo.h>
 
-#define trigPin 12
-#define echoPin 13
+#define trigPin 12;
+#define echoPin 13;
 
 Servo servo;
 bool triggered = false;  // Only run the servo once
@@ -73,7 +73,7 @@ void loop() {
 
   On my first milestone, the code worked but it couldn't run without it constantly having to be connected to my computer. However, I have made it so that it can run on its own with the battery and is put in a box with servos. The servos have popsicle sticks attached to them with paper with rock, paper, and scissors drawn on them. Along the way, I accidently connected the servos wrong and this caused me to brainstorm and I thought of the idea of adding a fan and wheels. On my third and final milestone, I will be finishing my modifications and having the whole project completed.
 
-  Code that works without having to be connected to my computer
+ ##  Code that works without having to be connected to my computer
 ```c++
 #include <Servo.h>
 
@@ -164,7 +164,7 @@ float readDistance() {
 
   My project is a rock paper scissors machine where it randomly chooses one of the servos to spin. It will then have a popsicle stick attached to it with a rock, paper, or scissor drawn on it. I chose this project as it was interesting looking and around my level. So far, I learned how to code Arduino in which I made it spin one of the three servos randomly. It works when something is 20 centimeters or less and the servos spin with a popsicle stick attached to it. For some reason, the code doesn't run unless it is connected to the computer thorough a USB cable. The next step for me is to have the code automatically run without it having to be wired to my computer.
 
-Only works when connected to computer
+## Only works when connected to computer
 ```c++
 
 #include <Servo.h>

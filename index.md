@@ -292,7 +292,7 @@ Don't forget to place the link of where to buy each component inside the quotati
 |:--:|:--:|:--:|:--:|
 | Wooden dowel 1/4 x 12 (25) | Axel for Wheels | $4.99 | <a href="https://www.amazon.com/25PCS-Dowel-Rods-Sticks-Wooden/dp/B08XQQ69WD/ref=asc_df_B08XQQ69WD?mcid=7803285604f635e99f6ba0be11af8197&hvocijid=18349788445460570884-B08XQQ69WD-&hvexpln=73&tag=hyprod-20&linkCode=df0&hvadid=721245378154&hvpos=&hvnetw=g&hvrand=18349788445460570884&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9032171&hvtargid=pla-2281435178778&th=1"> Wooden Dowels </a> |
 | 6.5 in rubber bands | rubber band launcher | $8.99 | <a href="https://www.amazon.com/Rubber-150pcs-Strong-Elastic-Perfect/dp/B09PF8HR4Y/ref=asc_df_B08VMP752P?mcid=0cfc318221bf3a66956cd61d0535ab5b&hvocijid=16778184434242817353-B08VMP752P-&hvexpln=73&tag=hyprod-20&linkCode=df0&hvadid=721245378154&hvpos=&hvnetw=g&hvrand=16778184434242817353&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9032171&hvtargid=pla-2281435179818&th=1"> Rubber bands </a> |
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
+
 
 
 # Starter Project

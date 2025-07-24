@@ -1,5 +1,5 @@
 # Rock Paper Scissors
-The rock, paper, and scissors game randomly chooses one of the sticks which will be used to play against you. It senses if your hand is twenty centimeters or closer and chooses a stick. It uses 3 servos and a ultrasonic sensor, as well as a arduino board with wires and breadboards.
+The rock, paper, and scissors game machine is mounted on wheels as a trailer. It  has a ultrasonic sensor, 3 servos, and a arduino board. It randomly chooses a servo with rock, paper, and scissors attached to it when it senses an object which is 20 centimeters or closer. It has a remote controlled car pulling it, with two motors and a arduino board.
 
 | **Name** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
@@ -14,7 +14,7 @@ The rock, paper, and scissors game randomly chooses one of the sticks which will
 
  <iframe width="560" height="315" src="https://www.youtube.com/embed/haNg8v8MGA0?si=vQSLK4bCU1hYGKXi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-  I have added wheels to my box 3-D modeled my rock, paper, and scissors on Blender. I also made a new remote controlled car that can pull my rock, paper, and scissors machine wherever I want to take it instead of having to pick up around. I also used heat shrink to connect the rock, paper, scissors machine trailer to my car. Throughout this project, the ultrasonic sensor was pretty buggy and I had to recode it a lot of the time. I also had some trouble with the remote controlled car and needed some help from my classmates.
+  Since my third milestone, I have remodeled by rock, paper, and scissors. Unfortunately, I've decided to remove the rubberband launcher because I decided it took away from rock paper scissors machine. However, I made a new remote controlled car that can pull my rock, paper, and scissors machine wherever I want to take it instead of having to pick up around. I also used heat shrink to connect the rock, paper, scissors machine trailer to my car. Throughout this project, the ultrasonic sensor was pretty buggy and I had to recode it a lot of the time. I also had some trouble with the remote controlled car and needed some help from my classmates. This will be my final milestone. Throughout this experience, I learned how to code and wire arduino. I also learned that I don't like coding and I prefer doing hardware because if there is a litte typo or I missed semicolon, then the whole code doesn't work and it is very annoying.
 
 ## Code for Remote Controlled Car
 ```c++

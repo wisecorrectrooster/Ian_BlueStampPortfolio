@@ -7,10 +7,11 @@ The rock, paper, and scissors game randomly chooses one of the sticks which will
 
 <img src="IanC.jpg" width="50%" height="50%"> 
 
- <img src="IMG_5584.jpeg" width="50%" height="50%">
 
- # Final Milestone 
+# Final Milestone 
  
+<img src="IMG_5584.jpeg" width="50%" height="50%">
+
  <iframe width="560" height="315" src="https://www.youtube.com/embed/haNg8v8MGA0?si=vQSLK4bCU1hYGKXi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
   I have added wheels to my box 3-D modeled my rock, paper, and scissors on Blender. I also made a new remote controlled car that can pull my rock, paper, and scissors machine wherever I want to take it instead of having to pick up around. I also used heat shrink to connect the rock, paper, scissors machine trailer to my car. Throughout this project, the ultrasonic sensor was pretty buggy and I had to recode it a lot of the time. I also had some trouble with the remote controlled car and needed some help from my classmates.
@@ -269,7 +270,7 @@ float readDistance() {
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SNgfvdcwz_M?si=wfufoF-CKIxGiGew" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-  My project is a rock paper scissors machine where it randomly chooses one of the servos to spin. It will then have a popsicle stick attached to it with a rock, paper, or scissor drawn on it. I chose this project as it was interesting looking and around my level. So far, I learned how to code Arduino in which I made it spin one of the three servos randomly. It works by using an ultrasonic sensor which sends out sound waves and the sound waves bounce back. It then caculates the delay and judges the distance the object is from the sensor 20 centimeters or less and the servos spin with a popsicle stick attached to it. For some reason, the code doesn't run unless it is connected to the computer thorough a USB cable. The next step for me is to have the code automatically run without it having to be wired to my computer.
+  My project is a rock paper scissors machine where it randomly chooses one of the servos to spin. A servo is a little motor that can only turn 180 degrees. It will then have a popsicle stick attached to it with a rock, paper, or scissor drawn on it. I chose this project as it was interesting looking and around my level. So far, I learned how to code Arduino in which I made it spin one of the three servos randomly.  It works by using an ultrasonic sensor which sends out sound waves and the sound waves bounce back. It then caculates the delay and judges the distance the object is from the sensor 20 centimeters or less and the servos spin with a popsicle stick attached to it. For some reason, the code doesn't run unless it is connected to the computer thorough a USB cable. The next step for me is to have the code automatically run without it having to be wired to my computer.
 
 ## Only works when connected to computer
 ```c++

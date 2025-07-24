@@ -13,13 +13,112 @@ The rock, paper, and scissors game randomly chooses one of the sticks which will
 
   I have added wheels to my box 3-D modeled my rock, paper, and scissors on Blender. I also made a new remote controlled car that can pull my rock, paper, and scissors machine wherever I want to take it instead of having to pick up around. I also used heat shrink to connect the rock, paper, scissors machine trailer to my car.
 
+## Code for Remote Controlled Car
+```c++
+
+#include <IRremote.h>
+
+#define IR_PIN 12  // IR receiver signal pin
+
+// Motor control pins (based on your setup)
+int IN1 = 8;
+int IN2 = 9;
+int IN3 = 10;
+int IN4 = 11;
+
+
+
+float duration, distance;
+
+IRrecv irrecv(IR_PIN);
+decode_results results;
+unsigned long lastcode;
+
+void setup() {
+  
+  IrReceiver.begin(IR_PIN, ENABLE_LED_FEEDBACK);
+
+  // Motor pins
+  pinMode(IN1, OUTPUT);
+  pinMode(IN2, OUTPUT);
+  pinMode(IN3, OUTPUT);
+  pinMode(IN4, OUTPUT);
+
+  Serial.begin(9600);
+  // Start motors enabled
+}
+
+void loop() {
+
+  if (IrReceiver.decode()) {
+    unsigned long code;
+    code = IrReceiver.decodedIRData.command;
+    lastcode = code;
+    Serial.println(code, HEX);
+    
+
+
+    switch (code) {
+      case 0x18: forward(); break;     // Replace with actual values from your remote
+      case 0x52: backward(); break;
+      case 0x08: left(); break;
+      case 0x5A: right(); break;
+      case 0x1C: stopMotors(); break;
+    }
+
+
+    IrReceiver.resume();
+  }
+  
+}
+
+void stopMotors() {
+  digitalWrite(IN1, LOW);
+  digitalWrite(IN2, LOW);
+  digitalWrite(IN3, LOW);
+  digitalWrite(IN4, LOW);
+}
+
+void forward() {
+  Serial.print("F");
+  digitalWrite(IN1, HIGH);
+  digitalWrite(IN2, LOW);
+  digitalWrite(IN3, HIGH);
+  digitalWrite(IN4, LOW);
+}
+
+void backward() {
+  Serial.print("B");
+  digitalWrite(IN1, LOW);
+  digitalWrite(IN2, HIGH);
+  digitalWrite(IN3, LOW);
+  digitalWrite(IN4, HIGH);
+}
+
+void left() {
+  Serial.print("L");
+  digitalWrite(IN1, LOW);
+  digitalWrite(IN2, LOW);
+  digitalWrite(IN3, HIGH);
+  digitalWrite(IN4, LOW);
+}
+
+void right() {
+  Serial.print("R");
+  digitalWrite(IN1, HIGH);
+  digitalWrite(IN2, LOW);
+  digitalWrite(IN3, LOW);
+  digitalWrite(IN4, LOW);
+}
+```
+
 # Third Milestone
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XZ90QMi0aBw?si=F6m3viqu-RIetxs1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
   I have added wheels to my box and made a rubber band to launcher to attach to my box later as a prank when people put thier hand in front of the ultrasonic sensor. Along the way, the rubber band launcher's wiring was kind of hard and confusing as I had to wire it myself without a diagram. Throughout this project, I have learned how to code on arduino and to wire servos and ultrasonic sensors to the board. I hope to learn more about coding and maybe increase my skills in wiring.
 
-## code for rubber band launcher
+## Code for Rubber Band Launcher
   ```c++
 #include <Servo.h>
 

@@ -5,13 +5,15 @@ The rock, paper, and scissors game randomly chooses one of the sticks which will
 |:--:|:--:|:--:|:--:|
 | Ian C. | Northgate High School |STEM| 9th grader
 
-<img src="IanC.jpg" width="50%" height="50%">
+<img src="IanC.jpg" width="50%" height="50%"> 
+
+ <img src="IMG_5584.jpeg" width="50%" height="50%">
 
  # Final Milestone 
-
+ 
  <iframe width="560" height="315" src="https://www.youtube.com/embed/haNg8v8MGA0?si=vQSLK4bCU1hYGKXi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-  I have added wheels to my box 3-D modeled my rock, paper, and scissors on Blender. I also made a new remote controlled car that can pull my rock, paper, and scissors machine wherever I want to take it instead of having to pick up around. I also used heat shrink to connect the rock, paper, scissors machine trailer to my car.
+  I have added wheels to my box 3-D modeled my rock, paper, and scissors on Blender. I also made a new remote controlled car that can pull my rock, paper, and scissors machine wherever I want to take it instead of having to pick up around. I also used heat shrink to connect the rock, paper, scissors machine trailer to my car. Throughout this project, the ultrasonic sensor was pretty buggy and I had to recode it a lot of the time. I also had some trouble with the remote controlled car and needed some help from my classmates.
 
 ## Code for Remote Controlled Car
 ```c++
@@ -116,7 +118,7 @@ void right() {
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XZ90QMi0aBw?si=F6m3viqu-RIetxs1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-  I have added wheels to my box and made a rubber band to launcher to attach to my box later as a prank when people put thier hand in front of the ultrasonic sensor. Along the way, the rubber band launcher's wiring was kind of hard and confusing as I had to wire it myself without a diagram. Throughout this project, I have learned how to code on arduino and to wire servos and ultrasonic sensors to the board. I hope to learn more about coding and maybe increase my skills in wiring.
+  I have added wheels to my box and made a rubber band to launcher to attach to my box later as a prank when people put thier hand in front of the ultrasonic sensor. The rubber band launcher has a servo which stays in place and keeps the rubberband taut. I have learned how to code on arduino and to wire servos and ultrasonic sensors to the board. The ultrasonic sensor is a little buggy but I fixed that. I will add a remote controlled car and remodel by rock, paper, and scissors.
 
 ## Code for Rubber Band Launcher
   ```c++
@@ -176,7 +178,7 @@ void loop() {
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NtIcOKggFbA?si=OMmbDALPtIFQoETY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-  On my first milestone, the code worked but it couldn't run without it constantly having to be connected to my computer. However, I have made it so that it can run on its own with the battery and is put in a box with servos. The servos have popsicle sticks attached to them with paper with rock, paper, and scissors drawn on them. Along the way, I accidently connected the servos wrong and this caused me to brainstorm and I thought of the idea of adding a fan and wheels. On my third and final milestone, I will be finishing my modifications and having the whole project completed.
+  On my first milestone, the code worked but it couldn't run without it constantly having to be connected to my computer. However, I have made it so that it can run on its own with the battery and is put in a box with servos. The servos have popsicle sticks attached to them with paper with rock, paper, and scissors drawn on them. Along the way, I accidently connected the servos wrong and this caused me to brainstorm and I thought of the idea of adding a fan and wheels. On my third milestone, I will be finishing my modifications and having the whole project completed.
 
  ##  Code that works without having to be connected to my computer
 ```c++
@@ -267,7 +269,7 @@ float readDistance() {
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SNgfvdcwz_M?si=wfufoF-CKIxGiGew" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-  My project is a rock paper scissors machine where it randomly chooses one of the servos to spin. It will then have a popsicle stick attached to it with a rock, paper, or scissor drawn on it. I chose this project as it was interesting looking and around my level. So far, I learned how to code Arduino in which I made it spin one of the three servos randomly. It works when something is 20 centimeters or less and the servos spin with a popsicle stick attached to it. For some reason, the code doesn't run unless it is connected to the computer thorough a USB cable. The next step for me is to have the code automatically run without it having to be wired to my computer.
+  My project is a rock paper scissors machine where it randomly chooses one of the servos to spin. It will then have a popsicle stick attached to it with a rock, paper, or scissor drawn on it. I chose this project as it was interesting looking and around my level. So far, I learned how to code Arduino in which I made it spin one of the three servos randomly. It works by using an ultrasonic sensor which sends out sound waves and the sound waves bounce back. It then caculates the delay and judges the distance the object is from the sensor 20 centimeters or less and the servos spin with a popsicle stick attached to it. For some reason, the code doesn't run unless it is connected to the computer thorough a USB cable. The next step for me is to have the code automatically run without it having to be wired to my computer.
 
 ## Only works when connected to computer
 ```c++

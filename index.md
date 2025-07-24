@@ -6,8 +6,14 @@ The rock, paper, and scissors game randomly chooses one of the sticks which will
 | Ian C. | Northgate High School |STEM| 9th grader
 
 <img src="IanC.jpg" width="50%" height="50%">
-  
-# Final Milestone
+
+ # Final Milestone 
+
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/haNg8v8MGA0?si=vQSLK4bCU1hYGKXi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+  I have added wheels to my box 3-D modeled my rock, paper, and scissors on Blender. I also made a new remote controlled car that can pull my rock, paper, and scissors machine wherever I want to take it instead of having to pick up around. I also used heat shrink to connect the rock, paper, scissors machine trailer to my car.
+
+# Third Milestone
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XZ90QMi0aBw?si=F6m3viqu-RIetxs1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
